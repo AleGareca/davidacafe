@@ -1,0 +1,14 @@
+@font-face{
+    font-family: tipografia;
+    src: url(Darleston.otf);
+    font-family: cafe;
+    src: url(CafeIcono.otf);
+ 
+}
+.texto{
+    font-family: tipografia;
+ 
+}
+.cafe{
+    font-family: cafe;
+}

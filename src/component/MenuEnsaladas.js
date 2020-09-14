@@ -1,4 +1,9 @@
 import React, { Component } from 'react'
+import caprese from '../assets/img/ensaladas/caprese.png'
+import atun from '../assets/img/ensaladas/atun.png'
+import pollo from '../assets/img/ensaladas/Pollo.png'
+import thai from '../assets/img/ensaladas/thai.png'
+import fresa from '../assets/img/ensaladas/fresca.png'
 
 export default class MenuEnsaladas extends Component {
     renderMenuItem(imagen, tipoDeFiltro, nombreComida, precio, descripcion) {
@@ -36,11 +41,11 @@ export default class MenuEnsaladas extends Component {
                 </div>
     
                 <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-                  {this.renderMenuItem("", "", "Pollo", "$240", "Mix de hojas verdes, tomate, zanahoria, quesito y pollo grillado")}
-                  {this.renderMenuItem("", "specialty", "Atún", "$270", "Mix de hojas verdes, tomate, huevo, zanahoria, aceitunas y lonjitas de atún")}
-                  {this.renderMenuItem("", "starters", "Caprese", "$270", "Muzzarella, rodajas de tomate, albahaca. oliva y pimienta negra")}
-                  {this.renderMenuItem("", "salads", "Thai", "$290", "Mix de hojas verdes, repollo colorado, tomate cherry, palta, quesitos y ganos de choclo. Aceite de oliva a elección")}
-                  {this.renderMenuItem("", "starters", "Ensalada fresca", "$290", "Rúcula, jamón crudo y parmesano")}
+                  {this.renderMenuItem(pollo, "", "Pollo", "$240", "Mix de hojas verdes, tomate, zanahoria, quesito y pollo grillado")}
+                  {this.renderMenuItem(atun, "specialty", "Atún", "$270", "Mix de hojas verdes, tomate, huevo, zanahoria, aceitunas y lonjitas de atún")}
+                  {this.renderMenuItem(caprese, "starters", "Caprese", "$270", "Muzzarella, rodajas de tomate, albahaca. oliva y pimienta negra")}
+                  {this.renderMenuItem(thai, "salads", "Thai", "$290", "Mix de hojas verdes, repollo colorado, tomate cherry, palta, quesitos y ganos de choclo. Aceite de oliva a elección")}
+                  {this.renderMenuItem(fresa, "starters", "Ensalada fresca", "$290", "Rúcula, jamón crudo y parmesano")}
                 </div>
               </div>
             </section>

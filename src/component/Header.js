@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../assets/css/letra.css'
 
 
 export default class Header extends Component {
@@ -10,7 +11,7 @@ export default class Header extends Component {
       <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-          <h1 class="logo mr-auto">{nombre}</h1>
+          <h1 class="logo texto mr-auto">{nombre}</h1>
           <nav class="nav-menu d-none d-lg-block">
             <ul>
               <li class="active"><a href={"/#"}>Home</a></li>

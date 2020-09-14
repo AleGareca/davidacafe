@@ -12,6 +12,7 @@ import MenuDelicias from './MenuDelicias';
 import MenuBebidas from './MenuBebidas';
 import Covid from './Covid';
 import ContacUs from './ContacUs';
+import Eventos from './Eventos';
 
 
 
@@ -22,6 +23,7 @@ export default class Home extends Component {
                 <Tolbar/>
                 <Header/>
                 <Presentation/>
+                <Covid/>
                 <Promos/>
                 <MenuCafeteria/>
                 <MenuPasteleria/>  
@@ -29,7 +31,7 @@ export default class Home extends Component {
                 <MenuSandwiches/>    
                 <MenuDelicias/> 
                 <MenuBebidas/>
-                <Covid/> 
+                <Eventos/> 
                 <ContacUs/> 
             </div>
         )
