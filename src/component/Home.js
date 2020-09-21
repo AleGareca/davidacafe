@@ -24,8 +24,8 @@ export default class Home extends Component {
                 <Header/>
                 <Presentation/>
                 <Covid/>
-                <Promos/>
                 <MenuCafeteria/>
+                <Promos/>
                 <MenuPasteleria/>  
                 <MenuEnsaladas/>
                 <MenuSandwiches/>    

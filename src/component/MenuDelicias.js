@@ -54,7 +54,7 @@ export default class MenuDelicias extends Component {
                 </div>
     
                 <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-                  {this.renderMenuItem(licuadoDeFrutas, "", "Licuado de frutas", "$170", "Frutas de estación")}
+                  {this.renderMenuItem(licuadoDeFrutas, "", "Mix frutal", "$170", "Frutas de estación")}
                   {this.renderMenuItem(yogur, "specialty", "Yogurt con frutilla", "$190", "")}
                   {this.renderMenuItem(smoothie, "starters", "Smoothies", "$160", "(Naraja - Durazno), (Naranja - Frutilla), (Frutilla - Banana)")}
                   {this.renderMenuItem(milkshake, "salads", "Milkshakes", "$170", "Batido de helado con leche sin crema")}

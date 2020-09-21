@@ -58,7 +58,7 @@ export default class Promos extends Component {
 
             <div class="section-title">
               <h2>Promos</h2>
-              <p>Consulte nuestras promos</p>
+              <p>Desayunos y meriendas</p>
             </div>
 
             <div class="row" data-aos="fade-up" data-aos-delay="100">
