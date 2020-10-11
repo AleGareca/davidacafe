@@ -30,8 +30,7 @@ export default class Home extends Component {
                 <MenuEnsaladas/>
                 <MenuSandwiches/>    
                 <MenuDelicias/> 
-                <MenuBebidas/>
-                <Eventos/> 
+                <MenuBebidas/> 
                 <ContacUs/> 
             </div>
         )

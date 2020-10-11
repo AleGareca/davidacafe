@@ -22,7 +22,7 @@ export default class MenuSandwiches extends Component {
     renderMenuItem(imagen, tipoDeFiltro, nombreComida, precio, descripcion) {
         return (
           <div className={"col-lg-6 menu-item filter-" + tipoDeFiltro}>
-            <img src={imagen} class="menu-img" alt="" />
+  
             <div class="menu-content">
               <a>{nombreComida}</a><span>{precio}</span>
             </div>
@@ -38,6 +38,7 @@ export default class MenuSandwiches extends Component {
           <div>
           
             <section id="sandwiches" class="menu section-bg">
+            <img src={jamoncocido} class="menu-img2" alt="" />
               <div class="container" data-aos="fade-up">
     
                 <div class="section-title">
@@ -45,16 +46,7 @@ export default class MenuSandwiches extends Component {
                   <p>Sandwiches </p>
                 </div>
     
-                <div class="row" data-aos="fade-up" data-aos-delay="100">
-                  <div class="col-lg-12 d-flex justify-content-center">
-                    <ul id="menu-flters">
-                      <li data-filter="*" class="filter-active">Todo</li>
-                      <li data-filter=".filter-starters">Tostados</li>
-                      <li data-filter=".filter-salads">Sandwiches clasicos</li>
-                      <li data-filter=".filter-salads">Sandwiches especiales</li>
-                    </ul>
-                  </div>
-                </div>
+            
     
                 <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
                   {this.renderMenuItem(jamoncrudo, "", "Jamón crudo y queso", "$160", "Pan miga - Árabe - Francés - Salvado. Armalo a tu gusto con lechuga y /o huevo")}

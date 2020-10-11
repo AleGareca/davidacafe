@@ -22,7 +22,7 @@ export default class MenuDelicias extends Component {
     renderMenuItem(imagen, tipoDeFiltro, nombreComida, precio, descripcion) {
         return (
           <div className={"col-lg-6 menu-item filter-" + tipoDeFiltro}>
-            <img src={imagen} class="menu-img" alt="" />
+
             <div class="menu-content">
               <a>{nombreComida}</a><span>{precio}</span>
             </div>
@@ -38,6 +38,7 @@ export default class MenuDelicias extends Component {
           <div>
 
             <section id="delicias" class="menu section-bg">
+            <img src={copaHelada} class="menu-img2" alt="" />
               <div class="container" data-aos="fade-up">
     
                 <div class="section-title">

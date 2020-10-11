@@ -19,6 +19,7 @@ import submarino from '../assets/img/menu/submarino.png'
 import techai from '../assets/img/menu/techai.png'
 import latte from '../assets/img/menu/latte.png'
 import itizen from '../assets/img/menu/itizen.png'
+import portada from '../assets/img/portada/cafePortada.jpg'
 
 
 
@@ -40,7 +41,6 @@ export default class MenuCafeteria extends Component {
   renderMenuItem(imagen, tipoDeFiltro, nombreComida, precio, descripcion) {
     return (
       <div className={"col-lg-6 menu-item filter-" + tipoDeFiltro}>
-        <img src={imagen} class="menu-img" alt="" />
         <div class="menu-content">
           <a>{nombreComida}</a><span>{precio}</span>
         </div>
@@ -56,46 +56,44 @@ export default class MenuCafeteria extends Component {
       <div>
         
         <section id="menu" class="menu section-bg">
+          
+        <img src={portada} class="menu-img2" alt="" />
           <div class="container" data-aos="fade-up">
 
             <div class="section-title">
               <h2>Menu</h2>
               <p>Cafetería </p>
             </div>
-
-            <div class="row" data-aos="fade-up" data-aos-delay="100">
-              <div class="col-lg-12 d-flex justify-content-center">
-                <ul id="menu-flters">
-                  <li data-filter="*" class="filter-active">Todo</li>
-                  <li data-filter=".filter-starters">Café Expresso</li>
-                  <li data-filter=".filter-salads">Especialidades</li>
-                  <li data-filter=".filter-specialty">Infuciones</li>
-                </ul>
-              </div>
-            </div>
+        
 
             <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-              {this.renderMenuItem(imagen, "", "Expresso", "$70", "")}
-              {this.renderMenuItem(imagen1, "specialty", "Expresso doble", "$100", "")}
-              {this.renderMenuItem(imagen2, "starters", "Expresso panna", "$80", "")}
-              {this.renderMenuItem(ristretto, "salads", "Ristretto", "$70", "")}
-              {this.renderMenuItem(macchiato, "starters", "Macchiato", "$70", "")}
-              {this.renderMenuItem(latte, "salads", "Latte", "$100", "")}
-              {this.renderMenuItem(lagrima, "salads", "Lágrima", "$100", "")}
-              {this.renderMenuItem(americano, "specialty", "Expreso Americano", "$85", "")}
-              {this.renderMenuItem(chico, "specialty", "Expreso chico", "$100", "")}
+              {this.renderMenuItem(imagen, "", "Expresso", "$100", "")}
+              {this.renderMenuItem(imagen1, "specialty", "Expresso doble", "$150", "")}
+              {this.renderMenuItem(imagen2, "starters", "Expresso panna", "$130", "")}
+              {this.renderMenuItem(ristretto, "salads", "Ristretto", "$100", "")}
+              {this.renderMenuItem(macchiato, "starters", "Macchiato", "$100", "")}
+              {this.renderMenuItem(latte, "salads", "Latte", "$150", "")}
+              {this.renderMenuItem(lagrima, "salads", "Lágrima", "$130", "")}
+              {this.renderMenuItem(americano, "specialty", "Expreso Americano", "$130", "")}
+              {this.renderMenuItem(chico, "specialty", "Expreso chico", "$140", "")}
               {this.renderMenuItem(grande, "specialty", "Expreso grande", "$170", "")}
-              {this.renderMenuItem(desinfectado, "specialty", "Expreso descafeinado", "$95", "")}
+              {this.renderMenuItem(desinfectado, "specialty", "Expreso descafeinado", "$130", "")}
               
-              {this.renderMenuItem(itizen, "specialty", "Té clasico Intizen", "$80", "")}
-              {this.renderMenuItem(itizenfina, "specialty", "Té Intizen fina", "$90", "Variedad de sabores")}
-              {this.renderMenuItem(limon, "specialty", "Té limon", "$90", "")}
-              {this.renderMenuItem(teleche, "specialty", "Té leche", "$90", "")}
-              {this.renderMenuItem(techai, "specialty", "Té Chai Latte", "$150", "Frio o caliente")}
-              {this.renderMenuItem(submarino, "specialty", "Submarino", "$150", "Negro/blanco")}
-              {this.renderMenuItem(chocolatada, "specialty", "Chocolatada", "$100", "")}
-              {this.renderMenuItem(matecocido, "specialty", "Matecocido", "$80", "")}
-              {this.renderMenuItem(matecocidoleche, "specialty", "Matecocido con leche", "$90", "")}
+              {this.renderMenuItem(itizen, "specialty", "Té clasico Intizen", "$100", "")}
+              {this.renderMenuItem(itizenfina, "specialty", "Té Intizen fina", "$130", "Variedad de sabores")}
+              {this.renderMenuItem(limon, "specialty", "Té limon", "$130", "")}
+              {this.renderMenuItem(teleche, "specialty", "Té leche", "$130", "")}
+              {this.renderMenuItem(techai, "specialty", "Té Chai Latte", "$190", "Frio o caliente")}
+              {this.renderMenuItem(submarino, "specialty", "Submarino", "$170", "Negro/blanco")}
+              {this.renderMenuItem(chocolatada, "specialty", "Chocolatada", "$150", "")}
+              {this.renderMenuItem(matecocido, "specialty", "Matecocido", "$100", "")}
+              {this.renderMenuItem(matecocidoleche, "specialty", "Matecocido con leche", "$130", "")}
+
+              {this.renderMenuItem(matecocidoleche, "specialty", "Capuchino Moka", "$190", "")}
+              {this.renderMenuItem(matecocidoleche, "specialty", "Capuchino Viennese", "$190", "")}
+              {this.renderMenuItem(matecocidoleche, "specialty", "Capuchino Vainilla", "$220", "")}
+              {this.renderMenuItem(matecocidoleche, "specialty", "Capuchino Bombon", "$210", "")}
+              {this.renderMenuItem(matecocidoleche, "specialty", "Capuchino Davida", "$210", "")}
 
             </div>
           </div>

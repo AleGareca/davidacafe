@@ -35,7 +35,7 @@ export default class ContacUs extends Component {
               <div class="phone">
                 <i class="icofont-phone"></i>
                 <h4>Telefono:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+541162348812</p>
               </div>
 
             </div>

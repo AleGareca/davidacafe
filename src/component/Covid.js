@@ -15,17 +15,17 @@ export default class Covid extends Component {
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Cuidemonos entre todos</h3>
+            <h3>Cuidarte es cuidarnos!!</h3>
             <p class="font-italic">
-              Tenemos los protocolos necesarios para cuidarnos entre todos
+            Cuidemosnos entre todos
             </p>
             <ul>
-              <li><i class="icofont-check-circled"></i> Platos, cubiertos y vasos descartables</li>
+              <li><i class="icofont-check-circled"></i> Uso de tapabocas oligatorio</li>
               <li><i class="icofont-check-circled"></i> Alcohol en gel por mesa</li>
               <li><i class="icofont-check-circled"></i> Distanciamiento de mesas de hasta 2 metros</li>
             </ul>
             <p>
-            Mas descripciones en esta seccion 
+            Contamos con espacios al aire libre aptos para reuniones y grupos de trabajo, amigos y eventos familiares con el protocolo correspondiente a la fecha 
             </p>
           </div>
         </div>

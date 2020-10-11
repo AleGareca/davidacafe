@@ -29,7 +29,6 @@ export default class MenuBebidas extends Component {
     renderMenuItem(imagen, tipoDeFiltro, nombreComida, precio, descripcion) {
         return (
           <div className={"col-lg-6 menu-item filter-" + tipoDeFiltro}>
-            <img src={imagen} class="menu-img" alt="" />
             <div class="menu-content">
               <a>{nombreComida}</a><span>{precio}</span>
             </div>
@@ -43,24 +42,15 @@ export default class MenuBebidas extends Component {
       render() {
         return (
           <div>
-
             <section id="bebidas" class="menu section-bg">
+            <img src={corronaPorron} class="menu-img2" alt="" />
               <div class="container" data-aos="fade-up">
     
                 <div class="section-title">
                   <h2>Menu</h2>
                   <p>Bebidas Frías </p>
                 </div>
-    
-                <div class="row" data-aos="fade-up" data-aos-delay="100">
-                  <div class="col-lg-12 d-flex justify-content-center">
-                    <ul id="menu-flters">
-                      <li data-filter="*" class="filter-active">Todo</li>
-                      <li data-filter=".filter-starters">Sin alcohol</li>
-                      <li data-filter=".filter-salads">Con alcohol</li>
-                    </ul>
-                  </div>
-                </div>
+  
     
                 <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
                   {this.renderMenuItem(coca, "", "Coca-Cola", "$95", "")}

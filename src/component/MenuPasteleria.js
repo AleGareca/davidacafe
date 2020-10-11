@@ -21,6 +21,7 @@ import Wsakado from '../assets/img/menu/Pasteleria/wafflesalado.png'
 import cheescake from '../assets/img/menu/Pasteleria/cheescake.png'
 import tiramisu from '../assets/img/menu/Pasteleria/tiramisu.png'
 import panqueque from '../assets/img/menu/Pasteleria/panqueque.png'
+import portada from '../assets/img/portada/pasteleriaPortada.jpg'
 
 export default class MenuPasteleria extends Component {
   
@@ -29,7 +30,7 @@ export default class MenuPasteleria extends Component {
     renderMenuItem(imagen, tipoDeFiltro, nombreComida, precio, descripcion) {
         return (
           <div className={"col-lg-6 menu-item filter-" + tipoDeFiltro}>
-            <img src={imagen} class="menu-img" alt="" />
+   
             <div class="menu-content">
               <a>{nombreComida}</a><span>{precio}</span>
             </div>
@@ -45,49 +46,48 @@ export default class MenuPasteleria extends Component {
           <div>
             
             <section id="pasteleria" class="menu section-bg">
+            <img src={portada} class="menu-img2" alt="" />
               <div class="container" data-aos="fade-up">
     
                 <div class="section-title">
                   <h2>Menu</h2>
                   <p>Pastelería </p>
                 </div>
-    
-                <div class="row" data-aos="fade-up" data-aos-delay="100">
-                  <div class="col-lg-12 d-flex justify-content-center">
-                    <ul id="menu-flters">
-                      <li data-filter="*" class="filter-active">Todo</li>
-                      <li data-filter=".filter-starters">Panadería</li>
-                      <li data-filter=".filter-salads">Pastelería</li>
-                    </ul>
-                  </div>
-                </div>
+  
     
                 <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
                   {this.renderMenuItem(medialunas, "", "Medialuna", "$30", "")}
-                  {this.renderMenuItem(MJQ, "specialty", "Medialuna c/jamon y queso", "$48", "")}
-                  {this.renderMenuItem(donas, "starters", "Donas c/dulce  de leche", "$65", "")}
-                  {this.renderMenuItem(churros, "salads", "Churros c/dulce de leche", "$28", "")}
-                  {this.renderMenuItem(libritos, "starters", "Libritos", "$30", "")}
-                  {this.renderMenuItem(chip, "salads", "Chipitas", "$220", "")}
-                  {this.renderMenuItem(mofin, "salads", "Muffins", "$75", "")}
+                  {this.renderMenuItem(MJQ, "specialty", "Medialuna c/jamon y queso", "$65", "")}
+                  {this.renderMenuItem(donas, "starters", "Donas c/dulce  de leche", "$90", "")}
+                  {this.renderMenuItem(churros, "salads", "Churros c/dulce de leche", "$35", "")}
+                  {this.renderMenuItem(libritos, "starters", "Libritos", "$35", "")}
+                  {this.renderMenuItem(chip, "salads", "Chipitas", "$250", "")}
+                  {this.renderMenuItem(mofin, "salads", "Muffins", "$140", "")}
 
-                  {this.renderMenuItem(crumble, "specialty", "Crumble de manzana", "$180", "")}
+                  {this.renderMenuItem(crumble, "specialty", "Crumble de manzana", "$260", "")}
                   {this.renderMenuItem(cuadraditosdecoco, "specialty", "Cuadraditos de coco y dulce de leche", "$180", "")}
-                  {this.renderMenuItem(cheescake, "specialty", "Cheesecake", "$180", "")}
-                  {this.renderMenuItem(lemonpie, "specialty", "Lemon Pie", "$180", "")}
+                  {this.renderMenuItem(cheescake, "specialty", "Cheesecake", "$290", "")}
+                  {this.renderMenuItem(lemonpie, "specialty", "Lemon Pie", "$290", "")}
                   {this.renderMenuItem(salvanegra, "specialty", "Selva negra", "$180", "")}
-                  {this.renderMenuItem(chocotorta, "specialty", "Chocotorta", "$180", "")}
-                  {this.renderMenuItem(tiramisu, "specialty", "Tiramisú", "$180", "")}
+                  {this.renderMenuItem(chocotorta, "specialty", "Chocotorta", "$290", "")}
+                  {this.renderMenuItem(tiramisu, "specialty", "Tiramisú", "$290", "")}
                   {this.renderMenuItem(cupcackes, "specialty", "Cupcakes", "$180", "")}
-                  {this.renderMenuItem(marquise, "specialty", "Marquise", "$180", "")}
-                  {this.renderMenuItem(balcarse, "specialty", "Postre BALCARCE", "$180", "Vainilla, frutilla, tiramisú")}
-                  {this.renderMenuItem(oreo, "specialty", "Torta Oreo", "$180", "")}
+                  {this.renderMenuItem(marquise, "specialty", "Marquise", "$290", "")}
+                  {this.renderMenuItem(balcarse, "specialty", "Postre BALCARCE", "$290", "Vainilla, frutilla, tiramisú")}
+                  {this.renderMenuItem(oreo, "specialty", "Torta Oreo", "$290", "")}
                   {this.renderMenuItem(blancoNegro, "specialty", "Pan Blanco / Salvado", "$30", "Pedilo para llevar")}
                   {this.renderMenuItem(Wsakado, "specialty", "Waffle Salados", "$220", "Muzzarella, jamón, tomate, albahaca y aceite de oliva")}
-                  {this.renderMenuItem(waffle, "specialty", "Waffle Dulce", "$250", "Dulce de leche, crema, bocha de helado y frutas de estacion")}
+                  {this.renderMenuItem(waffle, "specialty", "Waffle Dulce", "$350", "Dulce de leche, crema, bocha de helado, frutas de estacion y chocolate rayado")}
                   {this.renderMenuItem(panqueque, "specialty", "Panqueques", "$140", "Dulces o salados")}
-                  
-    
+                  {this.renderMenuItem(panqueque, "specialty", "Porcion de budin individual", "$90", "Marmolado o de amapola")}
+                  {this.renderMenuItem(panqueque, "specialty", "Alforcitos de maicena ", "$65", "")}
+                  {this.renderMenuItem(panqueque, "specialty", "Porcion de Brauni", "$80", "")}
+                  {this.renderMenuItem(panqueque, "specialty", "Porcion de Pastafrola", "$80", "")}
+                  {this.renderMenuItem(panqueque, "specialty", "Pan de hojaldre y chocolate", "$90", "")}
+                  {this.renderMenuItem(panqueque, "specialty", "Porcion de Brauni", "$80", "")}
+                  {this.renderMenuItem(panqueque, "specialty", "Hot cake", "$290", "miel y canela o frutas de estacion o dulce de leche ")}
+                  {this.renderMenuItem(panqueque, "specialty", "Hot cake", "$350", "Nutela y chocolate blanco")}
+                  {this.renderMenuItem(panqueque, "specialty", "Bagget", "$55", "Pedilo para llevar, Pan blanco, salvado")}   
                 </div>
               </div>
             </section>
