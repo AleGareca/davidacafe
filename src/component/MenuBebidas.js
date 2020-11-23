@@ -53,11 +53,11 @@ export default class MenuBebidas extends Component {
   
     
                 <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-                  {this.renderMenuItem(coca, "", "Coca-Cola", "$95", "")}
-                  {this.renderMenuItem(aguaS, "specialty", "Agua Saborizada", "$95", "Naranja, Manzana, Uva, Pera")}
-                  {this.renderMenuItem(agua, "starters", "Agua con o sin gas", "$95", "")}
-                  {this.renderMenuItem(exprimidoPomelo, "salads", "Exprimido Pomelo o Limonada", "$150", "")}
-                  {this.renderMenuItem(exprimido, "starters", "Exprimido Naranja", "$140", "")}
+                  {this.renderMenuItem(coca, "", "Coca-Cola", "$120", "")}
+                  {this.renderMenuItem(aguaS, "specialty", "Agua Saborizada", "$120", "Naranja, Manzana, Uva, Pera")}
+                  {this.renderMenuItem(agua, "starters", "Agua con o sin gas", "$120", "")}
+                  {this.renderMenuItem(exprimidoPomelo, "salads", "Exprimido Pomelo o Limonada", "$190", "")}
+                  {this.renderMenuItem(exprimido, "starters", "Exprimido Naranja", "$170", "")}
 
                   {this.renderMenuItem(quilmesPorron, "salads", "Quilmes Porrón", "$130", "")}
                   {this.renderMenuItem(quilmes1lt, "salads", "Quilmes 1LT", "$240", "")}

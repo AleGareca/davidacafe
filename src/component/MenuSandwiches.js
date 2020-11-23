@@ -49,23 +49,24 @@ export default class MenuSandwiches extends Component {
             
     
                 <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-                  {this.renderMenuItem(jamoncrudo, "", "Jamón crudo y queso", "$160", "Pan miga - Árabe - Francés - Salvado. Armalo a tu gusto con lechuga y /o huevo")}
-                  {this.renderMenuItem(jamoncocido, "specialty", "Jamón cocido y queso", "$140", "Pan miga - Árabe - Francés - Salvado. Armalo a tu gusto con lechuga y /o huevo")}
+                  {this.renderMenuItem(jamoncrudo, "", "Jamón crudo y queso", "$240", "Pan miga - Árabe - Francés - Salvado. Armalo a tu gusto con lechuga y /o huevo")}
+                  {this.renderMenuItem(jamoncocido, "specialty", "Jamón cocido y queso", "$190", "Pan miga - Árabe - Francés - Salvado. Armalo a tu gusto con lechuga y /o huevo")}
                   
-                  {this.renderMenuItem(salame, "starters", "Salame y queso", "$140", "")}
-                  {this.renderMenuItem(quesoGru, "salads", "Crudo y queso gruyére", "$180", "")}
-                  {this.renderMenuItem(bondiola, "starters", "Bondiola y queso", "$160", "")}
-                  {this.renderMenuItem(LomitoDePraga, "salads", "Lomito de praga y queso", "$160", "")}
-                  {this.renderMenuItem(panceta, "salads", "Panceta. huevo y tomate", "$180", "")}
-                  {this.renderMenuItem(veggi, "specialty", "Combo Veggie", "$330", " Limonada + sadwich de vegetales")}
+                  {this.renderMenuItem(salame, "starters", "Salame y queso", "$190", "")}
+                  {this.renderMenuItem(quesoGru, "salads", "Crudo y queso gruyére", "$270", "")}
+                  {this.renderMenuItem(bondiola, "starters", "Bondiola y queso", "$240", "")}
+                  {this.renderMenuItem(LomitoDePraga, "salads", "Lomito de praga y queso", "$270", "")}
+                  {this.renderMenuItem(panceta, "salads", "Panceta. huevo y tomate", "$270", "")}
+                  {this.renderMenuItem(veggi, "specialty", "Combo Veggie", "$450", " Limonada + sadwich de vegetales")}
                   
-                  {this.renderMenuItem(capresse, "specialty", "Caprese", "$190", "Muzzarella, rodajas de tomate, albahaca. oliva y pimienta")}
-                  {this.renderMenuItem(atun, "specialty", "Atún", "$190", "Lonjitas de atún, tomate, lechuga y huevo")}
-                  {this.renderMenuItem(pollo, "specialty", "Pollo", "$170", "Pollo grillado con finas hierbas, lechuga, tomate, queso, mayonesa y barbacoa")}
-                  {this.renderMenuItem(primavera, "specialty", "Super Primavera ", "$270", " Jamón, lechuga, queso y tomate en pan de miga. OPCIONAL: huevo, aceituas,choclo ó palmitos")}
-                  {this.renderMenuItem(tumaca, "specialty", "Pan tumaca", "$240", "Tostaditas untadas con oliva, ajo y tomate secos con finas fetas de jamón crudo")}
-                  {this.renderMenuItem(vegetales, "specialty", "Vegetales", "$220", "Pan negro, palta con base de queso crema, oliva, rúcula, tomates o portobelo")}
-                  {this.renderMenuItem(lomito, "specialty", "Lomito", "$290", "Pan de lomito, lechuga, tomate, jamón, queso y huevo frito")}
+                  {this.renderMenuItem(capresse, "specialty", "Caprese", "$240", "Muzzarella, rodajas de tomate, albahaca. oliva y pimienta")}
+                  {this.renderMenuItem(atun, "specialty", "Atún", "$250", "Lonjitas de atún, tomate, lechuga y huevo")}
+                  {this.renderMenuItem(pollo, "specialty", "Pollo", "$220", "Pollo grillado con finas hierbas, lechuga, tomate, queso, mayonesa y barbacoa")}
+                  {this.renderMenuItem(primavera, "specialty", "Super Primavera ", "$370", " Jamón, lechuga, queso y tomate en pan de miga. OPCIONAL: huevo, aceituas,choclo ó palmitos")}
+                  {this.renderMenuItem(tumaca, "specialty", "Pan tumaca", "$350", "Tostaditas untadas con oliva, ajo y tomate secos con finas fetas de jamón crudo")}
+                  {this.renderMenuItem(vegetales, "specialty", "Vegetales", "$290", "Pan negro, palta con base de queso crema, oliva, rúcula, tomates o portobelo")}
+                  {this.renderMenuItem(lomito, "specialty", "Lomito", "$370", "Pan de lomito, lechuga, tomate, jamón, queso y huevo frito")}
+                  {this.renderMenuItem(lomito, "specialty", "Acompañalo con", "$170", "Papas Rejillas, Papas Bastón, Papas Rusticas")}
                 </div>
               </div>
             </section>

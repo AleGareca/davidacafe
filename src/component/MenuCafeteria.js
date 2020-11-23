@@ -20,28 +20,39 @@ import techai from '../assets/img/menu/techai.png'
 import latte from '../assets/img/menu/latte.png'
 import itizen from '../assets/img/menu/itizen.png'
 import portada from '../assets/img/portada/cafePortada.jpg'
+import {db,auth} from './service/Firebase'
 
 
 
 export default class MenuCafeteria extends Component {
+ 
+    state = {
+      cafe:[]
+  }
+
+  componentDidMount(){
+    const data=db.ref().child('Cafe')
+    data.on('value',snap=>{
+      const ls = []
+      snap.forEach(e=>{
+      ls.push(e.val())
+      })
+      this.setState({cafe:ls})
+    })
+
+  }
 
 
-
- componentDidMount(){
-
-    const script = document.createElement("script");
-
-    script.src = "../assets/vendor/jquery/jquery.min.js";
-    script.async = true;
-
-    document.body.appendChild(script);
- }
-
+  renderCafe(){
+    return this.state.cafe.map(e => this.renderMenuItem("","",e.nombre,e.precio,""))
+  }
 
   renderMenuItem(imagen, tipoDeFiltro, nombreComida, precio, descripcion) {
     return (
+      
       <div className={"col-lg-6 menu-item filter-" + tipoDeFiltro}>
         <div class="menu-content">
+          
           <a>{nombreComida}</a><span>{precio}</span>
         </div>
         <div class="menu-ingredients">
@@ -56,7 +67,7 @@ export default class MenuCafeteria extends Component {
       <div>
         
         <section id="menu" class="menu section-bg">
-          
+          {console.log(this.state.cafe)}
         <img src={portada} class="menu-img2" alt="" />
           <div class="container" data-aos="fade-up">
 
@@ -67,17 +78,8 @@ export default class MenuCafeteria extends Component {
         
 
             <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-              {this.renderMenuItem(imagen, "", "Expresso", "$100", "")}
-              {this.renderMenuItem(imagen1, "specialty", "Expresso doble", "$150", "")}
-              {this.renderMenuItem(imagen2, "starters", "Expresso panna", "$130", "")}
-              {this.renderMenuItem(ristretto, "salads", "Ristretto", "$100", "")}
-              {this.renderMenuItem(macchiato, "starters", "Macchiato", "$100", "")}
-              {this.renderMenuItem(latte, "salads", "Latte", "$150", "")}
-              {this.renderMenuItem(lagrima, "salads", "Lágrima", "$130", "")}
-              {this.renderMenuItem(americano, "specialty", "Expreso Americano", "$130", "")}
-              {this.renderMenuItem(chico, "specialty", "Expreso chico", "$140", "")}
-              {this.renderMenuItem(grande, "specialty", "Expreso grande", "$170", "")}
-              {this.renderMenuItem(desinfectado, "specialty", "Expreso descafeinado", "$130", "")}
+              {this.renderCafe()}
+          
               
               {this.renderMenuItem(itizen, "specialty", "Té clasico Intizen", "$100", "")}
               {this.renderMenuItem(itizenfina, "specialty", "Té Intizen fina", "$130", "Variedad de sabores")}

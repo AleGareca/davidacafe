@@ -55,20 +55,22 @@ export default class MenuDelicias extends Component {
                 </div>
     
                 <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-                  {this.renderMenuItem(licuadoDeFrutas, "", "Mix frutal", "$170", "Frutas de estación")}
-                  {this.renderMenuItem(yogur, "specialty", "Yogurt con frutilla", "$190", "")}
-                  {this.renderMenuItem(smoothie, "starters", "Smoothies", "$160", "(Naraja - Durazno), (Naranja - Frutilla), (Frutilla - Banana)")}
-                  {this.renderMenuItem(milkshake, "salads", "Milkshakes", "$170", "Batido de helado con leche sin crema")}
+                  {this.renderMenuItem(licuadoDeFrutas, "", "Licuado de frtuas", "$190", "Con agua")}
+                  {this.renderMenuItem(licuadoDeFrutas, "", "Licuado de frtuas", "$220", "Con leche")}
+                  {this.renderMenuItem(licuadoDeFrutas, "", "Mix frutal", "$220", "Frutas de estación")}
+                  {this.renderMenuItem(yogur, "specialty", "Yogurt con frutilla", "$290", "")}
+                  {this.renderMenuItem(smoothie, "starters", "Smoothies", "$250", "(Naraja - Durazno), (Naranja - Frutilla), (Frutilla - Banana)")}
+                  {this.renderMenuItem(milkshake, "salads", "Milkshakes", "$250", "Batido de helado con leche sin crema")}
                   
-                  {this.renderMenuItem(frappeMoka, "starters", "Frappé Moka", "$190", "Expresso con helado de chocolate, cubierto con crema y chocolate rallado")}
-                  {this.renderMenuItem(frappeClassico, "salads", "Frappé Clásico", "$190", "Expreso con helado de vainilla, canela y cacao")}
-                  {this.renderMenuItem(frapeeDulceDeLeche, "salads", "Frappé dulce de leche", "$190", "Expresso con healdo de dulce de lece, cubierto con crema e hilos de dulce de leche")}
-                  {this.renderMenuItem(frapeeMenta, "specialty", "Frappé Moka-Menta", "$190", "Expresso con helado de menta y chocolate, cubierto con crema y chocolate rallado")}
-                  {this.renderMenuItem(frapeeDavida, "specialty", "Frappé Dávida", "$200", "Expresso con helado almendras, cubierto con crema y almedras caramelizadas")}
+                  {this.renderMenuItem(frappeMoka, "starters", "Frappé Moka", "$290", "Expresso con helado de chocolate, cubierto con crema y chocolate rallado")}
+                  {this.renderMenuItem(frappeClassico, "salads", "Frappé Clásico", "$290", "Expreso con helado de vainilla, canela y cacao")}
+                  {this.renderMenuItem(frapeeDulceDeLeche, "salads", "Frappé dulce de leche", "$290", "Expresso con healdo de dulce de lece, cubierto con crema e hilos de dulce de leche")}
+                  {this.renderMenuItem(frapeeMenta, "specialty", "Frappé Moka-Menta", "$290", "Expresso con helado de menta y chocolate, cubierto con crema y chocolate rallado")}
+                  {this.renderMenuItem(frapeeDavida, "specialty", "Frappé Dávida", "$290", "Expresso con helado almendras, cubierto con crema y almedras caramelizadas")}
 
-                  {this.renderMenuItem(copaHelada, "specialty", "Copa Helada Dávida", "$250", "")}
-                  {this.renderMenuItem(copaHeladaJunior, "specialty", "Copa Helada Junior", "$170", "")}
-                  {this.renderMenuItem(copaTriffle, "specialty", "Copa trifle ", "$280", " Mix de frutasde estación yogur, granola e hilos de miel ")}
+                  {this.renderMenuItem(copaHelada, "specialty", "Copa Helada Dávida", "$190", "")}
+                  {this.renderMenuItem(copaHeladaJunior, "specialty", "Copa Helada Junior", "$350", "")}
+                  {this.renderMenuItem(copaTriffle, "specialty", "Copa trifle ", "$350", " Mix de frutasde estación yogur, granola e hilos de miel ")}
                   {this.renderMenuItem(ensalada, "specialty", "Ensalada de frutas", "$190", "Mix de frutas de estación, ricas y frescas con exprimido de naranja")}
                 </div>
               </div>
